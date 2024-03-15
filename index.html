@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>MCQ Quiz</title>
+</head>
+
+<body>
+  <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+  
+  <div id="quiz-container" style="display: none;">
+    <div id="question-container"></div>
+    <form id="options-container"></form>
+    <div id="timer-container"></div>
+    <button id="next-btn" onclick="checkAnswer()">Next</button>
+  </div>
+  
+  <div id="certificate-page" style="display: none;">
+    <label for="name-input">Enter your name:</label>
+    <input type="text" id="name-input">
+    <button onclick="showCertificate()">Get Certificate</button>
+    <div id="certificate"></div>
+  </div>
+ <div id="loading-overlay">
+  <div class="loader"></div>
+</div>
+  <script src="script.js"></script>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #quiz-container {
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  #question-container {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+    background-color:#F2E4D7;
+    border-radius:15px;
+
+  }
+
+  #options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #timer-container {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: none;
+    color:red;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .option-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  #loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  
+  
